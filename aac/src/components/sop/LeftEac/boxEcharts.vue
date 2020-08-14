@@ -64,12 +64,12 @@ import Sop from '../Echarts.vue'
                        }, // 柱子上方的数值
                        itemStyle: {
                            barBorderRadius: [0, 20, 20, 0], // 圆角（左上、右上、右下、左下）
-                           // color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
-                           //     '#2FAEF2', '#1CD8A8'
-                           // ].map((color, offset) => ({
-                           //     color,
-                           //     offset
-                           // }))), // 渐变
+                           color: new this.$echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                               '#2FAEF2', '#1CD8A8'
+                           ].map((color, offset) => ({
+                               color,
+                               offset
+                           }))), // 渐变
                        },
                        data:[]
                    }, ]
@@ -115,10 +115,7 @@ import Sop from '../Echarts.vue'
 
 .top span{
   border: 0;
+  display: block;
   }
-/*
-.line{
-  width: 100%;
-  height: 90%;
-} */
+
 </style>

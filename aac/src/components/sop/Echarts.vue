@@ -17,7 +17,7 @@
       },
       height:{
         type:String,
-        default:"95%"
+        default:"85%"
       },
       option:{
         type:Object,
@@ -54,7 +54,7 @@
     },
     methods:{
       init(){
-       
+
         this.MyEcharts = this.$echarts.init(document.getElementById(this.id))
         this.MyEcharts.setOption(this.option)
       }
@@ -80,10 +80,10 @@
            if(this.MyEcharts){
              if(newVal){
                this.MyEcharts.setOption(newVal)
-               console.log(newVal)
+
              }else{
                this.MyEcharts.setOption(oldVal)
-               console.log(oldVal)
+
              }
            }
          else{

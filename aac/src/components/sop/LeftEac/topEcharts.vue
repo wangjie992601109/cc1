@@ -11,8 +11,6 @@
     name: 'topEcharts',
     data() {
       return {
-
-
         chartData: {
           xData: ['喀什市','疏附县','疏勒县','英吉沙县','泽普县','岳普湖县'],
           sData: [254, 3254, 1654, 2454,3000,1000],
@@ -110,7 +108,7 @@
       resods() {
         this.option.xAxis.data = this.chartData.xData
         this.option.series[0].data = this.chartData.sData
-        this.option.axisLabel.backgroundColor = this.chartData.BackgroundColor
+        this.option.backgroundColor = this.chartData.BackgroundColor
       }
 
     }
@@ -132,9 +130,4 @@
     border: 0;
   }
 
-  /*
-.line{
-  width: 100%;
-  height: 90%;
-} */
 </style>
