@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <span>最受欢迎水果单品</span>
-    <Sop id="lines" :option = "option" ref="registers_creditChart"></Sop>
+    <Sop id="lines" :option = "option" ref="registers_creditChart" style="margin: 0 auto;"></Sop>
   </div>
 </template>
 
@@ -16,7 +16,8 @@ import Sop from '../Echarts.vue'
           chartData: {
               yData: ["0~5岁","5~10岁","10-30岁","30-50岁","50-70岁","70-100","100以上"],
               sData: [320, 302, 341, 374, 390, 650, 420],
-              Color:"#fff"
+              Color:"#fff",
+               BackgroundColor: "#011c3a"
              },
 
           option:{
@@ -24,7 +25,7 @@ import Sop from '../Echarts.vue'
                     left: '10%',
                     right: '4%',
                     bottom: '3%',
-                    top:'0%',
+                    top:'10%',
                     containLabel: true
                 },
                 xAxis: [{
@@ -91,6 +92,7 @@ import Sop from '../Echarts.vue'
         this.option.yAxis[0].data = this.chartData.yData
         this.option.series[0].data = this.chartData.sData
         this.option.yAxis[0].axisLabel.color = this.chartData.Color
+        this.option.backgroundColor = this.chartData.BackgroundColor
       }
 
   }
@@ -111,6 +113,7 @@ import Sop from '../Echarts.vue'
   line-height: 30px;
   text-indent: 5px;
   border: 0;
+  margin: 0 auto;
 }
 
 .top span{

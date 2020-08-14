@@ -19,7 +19,7 @@
 
         option: {
           grid: {
-            left: '10%',
+            left: '5%',
             right: '4%',
             bottom: '10%',
             height: "80%",

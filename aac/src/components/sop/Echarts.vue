@@ -13,7 +13,7 @@
       },
       width:{
         type:String,
-        default:"100%"
+        default:"95%"
       },
       height:{
         type:String,
@@ -23,6 +23,14 @@
         type:Object,
         default(){
           return{
+
+            grid: {
+                   left: '10%',
+                   right: '4%',
+                   bottom: '3%',
+                   top:'0%',
+                   containLabel: true
+               },
              xAxis: {
 
                     data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
